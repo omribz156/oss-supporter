@@ -69,3 +69,13 @@ It intentionally does not include:
 
 Token counts are usage estimates from local logs, not invoices. Cached input is
 reported separately because providers often price it differently.
+
+## Publishing
+
+Generated `.local.*` files are private review artifacts. To publish impact:
+
+1. Generate local JSON and Markdown.
+2. Review for accidental private details.
+3. Copy aggregate values into `templates/impact-snapshot.md`.
+4. Commit the sanitized copy as `impact/YYYY-MM.md`.
+5. Update `impact/README.md` with the newest snapshot row.

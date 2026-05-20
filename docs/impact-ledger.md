@@ -60,3 +60,32 @@ python tools/token-meter/token_meter.py \
 
 Review generated files before publishing. Files ending in `.local.*` are ignored
 by default.
+
+## Public Display
+
+The public display should be a receipt, not a transcript.
+
+Recommended shape:
+
+1. Generate `impact/YYYY-MM.local.md` and `impact/YYYY-MM.local.json`.
+2. Review locally.
+3. Copy safe totals into [templates/impact-snapshot.md](../templates/impact-snapshot.md).
+4. Save as `impact/YYYY-MM.md`.
+5. Add the new row to [impact/README.md](../impact/README.md).
+
+Good public metrics:
+
+- tokens used
+- projects helped
+- issues triaged
+- reproductions posted
+- PRs opened
+- PRs merged
+- review fixes shipped
+
+Keep the story concrete, but sanitized. A useful line is:
+
+```text
+This month, spare agent capacity helped triage X issues and merge Y focused PRs
+across Z projects.
+```

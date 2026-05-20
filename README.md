@@ -103,6 +103,21 @@ python tools/token-meter/token_meter.py --include-cwd oss-supporter
 It reads Codex JSONL logs and emits aggregate-only token totals. It does not
 publish prompts, responses, raw paths, or session IDs.
 
+## Impact
+
+Use the meter to create a private `.local.*` snapshot, review it, then publish a
+sanitized public receipt under [impact/](impact/README.md).
+
+Public receipts should show the useful part:
+
+- tokens spent on OSS support
+- projects helped
+- PRs, comments, reproductions, and review fixes
+- merged or maintainer-accepted outcomes
+
+They should not show private logs, local paths, raw conversations, account data,
+or hidden queues.
+
 ## Start Here
 
 Read these in order:
