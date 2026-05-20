@@ -1,0 +1,21 @@
+# Local workbench data
+work/
+private/
+scratch/
+tmp/
+
+# Generated impact exports
+impact/*.local.*
+impact/raw/
+
+# Logs and transcripts
+*.log
+*.jsonl
+sessions/
+archived_sessions/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
