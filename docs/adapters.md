@@ -12,6 +12,8 @@ clear.
 | Adapter | Source | Output | Notes |
 | --- | --- | --- | --- |
 | `tools/token-meter` | Codex JSONL logs | sanitized JSON / Markdown aggregate token reports | local-only by default; `.local.*` outputs are ignored |
+| `tools/status` | public GitHub PR/issue state | compact status rows / JSON snapshots | requires authenticated `gh`; keep snapshots local until reviewed |
+| `skills/` | Markdown workflow packs | reusable agent instructions | portable; usable by any agent that can read Markdown |
 
 ## Adapter Rules
 

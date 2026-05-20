@@ -39,6 +39,7 @@ If the action mostly helps you and not the maintainer, skip it.
 - A public, reusable method for agent-assisted OSS support.
 - A set of validation gates before public action.
 - Templates for scoped slices, comments, PRs, and status ledgers.
+- Portable skill packs for scout, PR, and review workflows.
 - A privacy-safe way to publish aggregate impact.
 - A durable memory system for lessons learned from maintainer feedback.
 
@@ -88,6 +89,7 @@ assets/     public README and docs visuals
 docs/       reusable playbooks and policies
 examples/   sanitized public case studies
 impact/     aggregate public impact snapshots
+skills/     portable Markdown agent workflows
 templates/  copyable issue, slice, PR, and status templates
 tools/      optional local helpers; never require a specific agent
 ```
@@ -102,6 +104,16 @@ python tools/token-meter/token_meter.py --include-cwd oss-supporter
 
 It reads Codex JSONL logs and emits aggregate-only token totals. It does not
 publish prompts, responses, raw paths, or session IDs.
+
+## Status Helpers
+
+The repo also includes GitHub CLI helpers for checking submitted PRs/comments:
+
+```bash
+pwsh ./tools/status/oss-status.ps1 -LeadClaimsPath work/lead-claims.md
+```
+
+See [tools/status](tools/status/README.md).
 
 ## Impact
 
@@ -133,6 +145,8 @@ Read these in order:
 
 Then copy [templates/work-slice.md](templates/work-slice.md) for the first
 small support attempt.
+
+Optional agent workflows live in [skills/](skills/README.md).
 
 ## License
 

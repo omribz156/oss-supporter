@@ -14,6 +14,7 @@ Rules:
 Included tools:
 
 - [token-meter](token-meter/README.md): local aggregate Codex JSONL usage exporter
+- [status](status/README.md): GitHub CLI helpers for compact PR/comment follow-up
 
 Adapter notes live in [docs/adapters.md](../docs/adapters.md).
 

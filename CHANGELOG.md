@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added portable OSS workflow skills for scouting, PR flow, and review follow-up.
+- Added portable GitHub status scripts for compact PR/comment follow-up.
+
 ## 0.1.0 - 2026-05-20
 
 - Initial public playbook scaffold.
