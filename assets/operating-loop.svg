@@ -1,0 +1,41 @@
+<svg width="1100" height="420" viewBox="0 0 1100 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OSS Supporter operating loop</title>
+  <desc id="desc">Scout, reject fast, slice, verify, publish, follow up, learn.</desc>
+  <rect width="1100" height="420" rx="20" fill="#F8FAFC"/>
+  <rect x="30" y="30" width="1040" height="360" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="64" y="82" fill="#0F172A" font-size="28" font-weight="800">The support loop</text>
+    <text x="64" y="113" fill="#475569" font-size="16">Small, reversible steps that reduce maintainer burden.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
+    </marker>
+  </defs>
+  <g stroke="#64748B" stroke-width="2.2" marker-end="url(#arrow)">
+    <path d="M195 210H281"/>
+    <path d="M405 210H491"/>
+    <path d="M615 210H701"/>
+    <path d="M825 210H911"/>
+    <path d="M965 250C965 330 147 330 147 250"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">
+    <rect x="70" y="160" width="126" height="92" rx="14" fill="#E0F2FE" stroke="#38BDF8"/>
+    <text x="107" y="200" fill="#075985">Scout</text>
+    <text x="92" y="226" fill="#0369A1" font-size="13" font-weight="600">find leads</text>
+    <rect x="280" y="160" width="126" height="92" rx="14" fill="#ECFCCB" stroke="#84CC16"/>
+    <text x="302" y="200" fill="#365314">Reject fast</text>
+    <text x="304" y="226" fill="#4D7C0F" font-size="13" font-weight="600">avoid sinks</text>
+    <rect x="490" y="160" width="126" height="92" rx="14" fill="#FEF3C7" stroke="#F59E0B"/>
+    <text x="533" y="200" fill="#92400E">Slice</text>
+    <text x="516" y="226" fill="#B45309" font-size="13" font-weight="600">scope work</text>
+    <rect x="700" y="160" width="126" height="92" rx="14" fill="#F3E8FF" stroke="#A855F7"/>
+    <text x="733" y="200" fill="#6B21A8">Verify</text>
+    <text x="726" y="226" fill="#7E22CE" font-size="13" font-weight="600">test/source</text>
+    <rect x="910" y="160" width="126" height="92" rx="14" fill="#FFE4E6" stroke="#FB7185"/>
+    <text x="942" y="200" fill="#9F1239">Publish</text>
+    <text x="936" y="226" fill="#BE123C" font-size="13" font-weight="600">disclose</text>
+    <rect x="410" y="292" width="280" height="52" rx="14" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="448" y="325" fill="#334155" font-size="16">Follow up, learn, clean up</text>
+  </g>
+</svg>

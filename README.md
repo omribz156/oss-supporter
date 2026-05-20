@@ -1,11 +1,21 @@
+![OSS Supporter banner](assets/oss-supporter-banner.svg)
+
 # OSS Supporter
 
-Use spare agent capacity for public-good open source maintenance.
+**Use spare tokens for good.**
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-0f766e.svg)](LICENSE)
+[![Agent agnostic](https://img.shields.io/badge/agent-agnostic-2563eb.svg)](#what-this-is)
+[![OS agnostic](https://img.shields.io/badge/os-linux%20%7C%20macOS%20%7C%20windows-7c3aed.svg)](#what-this-is)
+[![Maintainer first](https://img.shields.io/badge/default-maintainer%20first-f59e0b.svg)](docs/validation-gates.md)
+
+Turn unused agent/model capacity into careful open source maintenance.
 OSS Supporter is an operating playbook for finding small, useful OSS work,
-validating it, doing it carefully, and leaving maintainers with less burden than
-before. It is model-agnostic, agent-agnostic, and OS-agnostic: use any assistant,
-CLI, editor, or manual workflow that can follow the gates.
+validating it, doing it well, and leaving maintainers with less burden than
+before.
+
+It is model-agnostic, agent-agnostic, and OS-agnostic: use any assistant, CLI,
+editor, or manual workflow that can follow the gates.
 
 ## Philosophy
 
@@ -42,6 +52,8 @@ If the action mostly helps you and not the maintainer, skip it.
 
 ## Core Loop
 
+![OSS Supporter operating loop](assets/operating-loop.svg)
+
 1. Scout: find likely-useful issues or PR follow-ups.
 2. Reject fast: archived, stale, duplicate, crowded, unclear, or high-risk.
 3. Claim locally: avoid duplicate action across operators or agents.
@@ -72,10 +84,11 @@ See [docs/publication-boundary.md](docs/publication-boundary.md).
 ## Repository Shape
 
 ```text
+assets/     public README and docs visuals
 docs/       reusable playbooks and policies
-templates/  copyable issue, slice, PR, and status templates
 examples/   sanitized public case studies
 impact/     aggregate public impact snapshots
+templates/  copyable issue, slice, PR, and status templates
 tools/      optional local helpers; never require a specific agent
 ```
 
