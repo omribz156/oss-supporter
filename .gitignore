@@ -13,6 +13,12 @@ impact/raw/
 *.jsonl
 sessions/
 archived_sessions/
+!tools/token-meter/tests/fixtures/
+!tools/token-meter/tests/fixtures/**
+
+# Python test noise
+__pycache__/
+*.pyc
 
 # OS/editor noise
 .DS_Store

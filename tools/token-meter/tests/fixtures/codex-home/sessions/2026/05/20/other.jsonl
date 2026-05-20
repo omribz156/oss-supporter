@@ -1,0 +1,2 @@
+{"timestamp":"2026-05-20T11:00:00.000Z","type":"session_meta","payload":{"id":"22222222-2222-2222-2222-222222222222","cwd":"/work/not-this","model":"gpt-test"}}
+{"timestamp":"2026-05-20T11:00:01.000Z","type":"event_msg","payload":{"type":"token_count","info":{"last_token_usage":{"input_tokens":999,"cached_input_tokens":0,"output_tokens":1,"reasoning_output_tokens":0,"total_tokens":1000}}}}

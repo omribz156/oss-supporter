@@ -43,3 +43,20 @@ Impact should be public, aggregate, and honest.
   }
 }
 ```
+
+## Local Token Meter
+
+The first included helper is [tools/token-meter](../tools/token-meter/README.md).
+It scans local Codex JSONL logs and emits aggregate-only token totals.
+
+Example:
+
+```bash
+python tools/token-meter/token_meter.py \
+  --include-cwd oss-supporter \
+  --json-out impact/oss-supporter-impact.local.json \
+  --markdown-out impact/oss-supporter-impact.local.md
+```
+
+Review generated files before publishing. Files ending in `.local.*` are ignored
+by default.

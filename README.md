@@ -92,6 +92,17 @@ templates/  copyable issue, slice, PR, and status templates
 tools/      optional local helpers; never require a specific agent
 ```
 
+## Impact Meter
+
+The public repo includes a local token usage scanner:
+
+```bash
+python tools/token-meter/token_meter.py --include-cwd oss-supporter
+```
+
+It reads Codex JSONL logs and emits aggregate-only token totals. It does not
+publish prompts, responses, raw paths, or session IDs.
+
 ## Start Here
 
 Read these in order:

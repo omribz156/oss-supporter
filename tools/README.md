@@ -11,9 +11,12 @@ Rules:
 - document input and output formats
 - support Linux, macOS, and Windows where practical
 
+Included tools:
+
+- [token-meter](token-meter/README.md): local aggregate Codex JSONL usage exporter
+
 Planned tools:
 
-- token/usage aggregate exporter
 - public impact snapshot generator
 - public repo export checker
 - status ledger formatter
