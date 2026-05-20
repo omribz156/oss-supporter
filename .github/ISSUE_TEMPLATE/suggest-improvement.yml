@@ -1,0 +1,24 @@
+name: Suggest an improvement
+description: Suggest a playbook, template, tooling, or documentation improvement.
+title: "Improve: "
+labels: ["improvement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, unsafe, too manual, or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change would help?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links or examples. Keep private workbench details out.

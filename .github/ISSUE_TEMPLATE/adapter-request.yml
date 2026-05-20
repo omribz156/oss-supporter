@@ -1,0 +1,27 @@
+name: Request an adapter
+description: Request support for another local usage source or impact export.
+title: "Adapter: "
+labels: ["adapter"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Which tool, agent, or export format should be parsed?
+      placeholder: Claude usage export, API billing CSV, local agent logs
+    validations:
+      required: true
+  - type: textarea
+    id: public_format
+    attributes:
+      label: Public output
+      description: What aggregate fields should the adapter produce?
+      placeholder: input tokens, output tokens, cached input, sessions matched, warnings
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy notes
+      description: What fields must never be published?
+      placeholder: prompts, responses, paths, session IDs, account IDs
+    validations:
+      required: true

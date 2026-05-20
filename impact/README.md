@@ -34,7 +34,9 @@ Add newest first:
 
 | Period | Snapshot | Tokens | Projects Helped | PRs Merged |
 | --- | --- | ---: | ---: | ---: |
-| YYYY-MM | [template](../templates/impact-snapshot.md) | 0 | 0 | 0 |
+| 2026-05 | [snapshot](2026-05.md) | 655,840,395 | 48 | 9 |
+
+Template: [impact-snapshot.md](../templates/impact-snapshot.md).
 
 ## Publish Checklist
 

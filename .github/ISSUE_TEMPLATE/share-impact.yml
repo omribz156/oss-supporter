@@ -1,0 +1,29 @@
+name: Share an impact setup
+description: Share how you are using OSS Supporter or publishing aggregate impact.
+title: "Impact setup: "
+labels: ["impact"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share aggregate methods and public receipts only. Do not include raw logs,
+        prompts, session files, private paths, credentials, or account details.
+  - type: input
+    id: snapshot
+    attributes:
+      label: Public snapshot link
+      description: Link to a sanitized impact snapshot, if you have one.
+      placeholder: https://github.com/you/repo/blob/main/impact/YYYY-MM.md
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What agent/tooling/workflow did you use?
+      placeholder: "I generate local totals, review them, then publish monthly aggregate snapshots."
+  - type: textarea
+    id: lesson
+    attributes:
+      label: Lessons
+      description: What worked, what felt risky, or what should the playbook improve?
+    validations:
+      required: true

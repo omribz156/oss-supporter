@@ -108,6 +108,8 @@ publish prompts, responses, raw paths, or session IDs.
 Use the meter to create a private `.local.*` snapshot, review it, then publish a
 sanitized public receipt under [impact/](impact/README.md).
 
+Latest public receipt: [May 2026](impact/2026-05.md).
+
 Public receipts should show the useful part:
 
 - tokens spent on OSS support
@@ -127,6 +129,7 @@ Read these in order:
 3. [docs/public-voice.md](docs/public-voice.md)
 4. [docs/review-followup.md](docs/review-followup.md)
 5. [docs/impact-ledger.md](docs/impact-ledger.md)
+6. [docs/adapters.md](docs/adapters.md)
 
 Then copy [templates/work-slice.md](templates/work-slice.md) for the first
 small support attempt.

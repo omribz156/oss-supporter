@@ -15,6 +15,8 @@ Included tools:
 
 - [token-meter](token-meter/README.md): local aggregate Codex JSONL usage exporter
 
+Adapter notes live in [docs/adapters.md](../docs/adapters.md).
+
 Planned tools:
 
 - public impact snapshot generator
