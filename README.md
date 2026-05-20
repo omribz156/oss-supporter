@@ -94,5 +94,4 @@ small support attempt.
 
 ## License
 
-License is intentionally not set yet. Choose one before publishing if you want
-others to reuse the templates and tools.
+MIT. Take it, adapt it, remix it, and use it to help maintainers.
