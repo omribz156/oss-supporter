@@ -17,6 +17,64 @@ before.
 It is model-agnostic, agent-agnostic, and OS-agnostic: use any assistant, CLI,
 editor, or manual workflow that can follow the gates.
 
+## Current Impact
+
+Latest public receipt: [May 2026](impact/2026-05.md), updated through
+2026-05-24.
+
+| Tokens used | Projects touched | PR/status records tracked | PRs merged | Source-backed comments |
+| ---: | ---: | ---: | ---: | ---: |
+| 1,030,308,708 | 70 | 116 | 29 | 18 |
+
+Recent accepted work includes focused fixes in
+[OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js/pull/6722),
+[containerd/nerdctl](https://github.com/containerd/nerdctl/pull/4909),
+[Microsoft Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain/pulls?q=is%3Apr+author%3Aomribz156),
+[Elastic CLI](https://github.com/elastic/cli/pulls?q=is%3Apr+author%3Aomribz156),
+[Loxia OnBuzz](https://github.com/Loxia-ai/onbuzz-community/pulls?q=is%3Apr+author%3Aomribz156),
+[Open QA](https://github.com/MyNameIsEdi/open-qa/pulls?q=is%3Apr+author%3Aomribz156),
+and [shadcn-vue](https://github.com/unovue/shadcn-vue/pull/1827).
+
+## Start In One Paste
+
+Give this repo link to your agent, then paste:
+
+```text
+You are helping me use OSS Supporter.
+
+Read this repo as the public playbook. Keep private workbench files, local
+clones, raw logs, credentials, account state, and personal notes outside this
+repo.
+
+Start by asking me where I want to begin:
+1. Set up my private OSS workbench
+2. Find new OSS projects to help
+3. Follow up existing PRs or issues
+4. Prepare a focused PR or comment
+5. Publish an impact update
+6. Just explain the workflow
+
+Do not scan, clone, patch, post, or open a PR until I choose a starting point.
+Do not take public action until I approve the target and message.
+```
+
+See [START.md](START.md) for first-run setup, modes, and next steps.
+
+## Easy Start
+
+Pick one mode:
+
+| Mode | Use when | First result |
+| --- | --- | --- |
+| Learn | You are new to the workflow | A short explanation and recommended next step |
+| Set up | You want a private local workbench | A safe folder layout and starter ledgers |
+| Scout | You want new OSS leads | Candidate issues after reject checks only |
+| Follow up | You already have PRs or comments open | A compact action list |
+| Prepare | You approved one target | A focused comment, repro, docs fix, test, or PR plan |
+| Impact | You want a public receipt | Sanitized aggregate impact draft |
+
+Default first run: ask where to start. No surprise scans, no public action.
+
 ## Philosophy
 
 Many developers have unused model capacity: idle subscription windows, spare
@@ -132,10 +190,11 @@ Public receipts should show the useful part:
 They should not show private logs, local paths, raw conversations, account data,
 or hidden queues.
 
-## Start Here
+## Deeper Docs
 
 Read these in order:
 
+1. [START.md](START.md)
 1. [docs/operating-model.md](docs/operating-model.md)
 2. [docs/validation-gates.md](docs/validation-gates.md)
 3. [docs/public-voice.md](docs/public-voice.md)
