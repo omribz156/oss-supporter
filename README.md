@@ -20,19 +20,22 @@ editor, or manual workflow that can follow the gates.
 ## Current Impact
 
 Latest public receipt: [May 2026](impact/2026-05.md), updated through
-2026-05-24.
+2026-05-28.
 
-| Tokens used | Projects touched | PR/status records tracked | PRs merged | Source-backed comments |
+| Tokens used | Public repos referenced | Open PRs tracked | Accepted/merged outcomes | Public comments/replies |
 | ---: | ---: | ---: | ---: | ---: |
-| 1,030,308,708 | 70 | 116 | 29 | 18 |
+| 1,473,567,820 | 121 | 116 | 39 | 39 |
 
 Recent accepted work includes focused fixes in
 [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js/pull/6722),
 [containerd/nerdctl](https://github.com/containerd/nerdctl/pull/4909),
 [Microsoft Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain/pulls?q=is%3Apr+author%3Aomribz156),
+[Microsoft VS Code DocumentDB](https://github.com/microsoft/vscode-documentdb/pull/664),
 [Elastic CLI](https://github.com/elastic/cli/pulls?q=is%3Apr+author%3Aomribz156),
+[JFrog Credentials Provider](https://github.com/jfrog/jfrog-credentials-provider/pull/79),
 [Loxia OnBuzz](https://github.com/Loxia-ai/onbuzz-community/pulls?q=is%3Apr+author%3Aomribz156),
 [Open QA](https://github.com/MyNameIsEdi/open-qa/pulls?q=is%3Apr+author%3Aomribz156),
+[monday vibe](https://github.com/mondaycom/vibe/pulls?q=is%3Apr+author%3Aomribz156),
 and [shadcn-vue](https://github.com/unovue/shadcn-vue/pull/1827).
 
 ## Start In One Paste
@@ -59,6 +62,7 @@ Do not take public action until I approve the target and message.
 ```
 
 See [START.md](START.md) for first-run setup, modes, and next steps.
+Agents can use [AGENT_START.md](AGENT_START.md) as the shortest entrypoint.
 
 ## Easy Start
 
@@ -74,6 +78,52 @@ Pick one mode:
 | Impact | You want a public receipt | Sanitized aggregate impact draft |
 
 Default first run: ask where to start. No surprise scans, no public action.
+
+## Practical Toolkit
+
+![OSS Supporter helper flow](assets/helper-flow.svg)
+
+These helpers automate the boring checks while leaving judgment with the
+operator:
+
+| Step | Helper | Result |
+| --- | --- | --- |
+| Score a lead | `tools/lead-score` | proceed / watch / skip signal |
+| Preflight a repo | `tools/repo-capability` | likely checks and local blockers |
+| Check generated surfaces | `tools/source-truth` | template/source hints |
+| Draft PR text | `tools/pr-body-builder` | body-file safe Markdown |
+| Check submitted work | `tools/status` | compact follow-up actions |
+| Count impact | `tools/token-meter` | aggregate token totals |
+| Guard public export | `tools/public-boundary` | private-data leak check |
+| Find cleanup wins | `tools/cleanup-doctor` | dry-run heavy-folder list |
+
+See [docs/workflow-upgrades.md](docs/workflow-upgrades.md).
+
+## Safety Defaults
+
+Use these defaults even when the agent is autonomous:
+
+| Boundary | Default |
+| --- | --- |
+| Public action | Human approves the target and message |
+| Private data | Keep raw logs, credentials, local notes, and claims outside this repo |
+| Scouting | Reject stale, duplicate, crowded, or unclear targets before cloning |
+| Patches | Prefer focused docs, tests, repros, CI fixes, and small code changes |
+| Disclosure | Mention agent assistance plainly in PRs/comments |
+| Impact | Publish aggregate totals and links, not raw sessions |
+
+## Install / Use Matrix
+
+Most of the repo is plain Markdown. Tools are optional:
+
+| Need | Requirement |
+| --- | --- |
+| Read the playbook | Any browser, editor, or agent |
+| Run Python helpers | Python 3.10+ |
+| Check GitHub PR/issue status | GitHub CLI authenticated with `gh auth login` |
+| Use PowerShell status helpers | PowerShell 7+ preferred; Windows PowerShell usually works |
+| Parse Codex impact locally | Access to your own local Codex session logs |
+| Publish the repo | Run `tools/public-boundary` before pushing |
 
 ## Philosophy
 
@@ -173,6 +223,26 @@ pwsh ./tools/status/oss-status.ps1 -LeadClaimsPath work/lead-claims.md
 
 See [tools/status](tools/status/README.md).
 
+## Preflight Helpers
+
+Score a lead before cloning:
+
+```bash
+python tools/lead-score/lead_score.py owner/repo#123
+```
+
+Check a repo before promising tests:
+
+```bash
+python tools/repo-capability/repo_capability.py path/to/repo
+```
+
+Check generated/docs source-truth risk:
+
+```bash
+python tools/source-truth/source_truth_check.py path/to/repo --touched docs/example.md
+```
+
 ## Impact
 
 Use the meter to create a private `.local.*` snapshot, review it, then publish a
@@ -199,13 +269,25 @@ Read these in order:
 2. [docs/validation-gates.md](docs/validation-gates.md)
 3. [docs/public-voice.md](docs/public-voice.md)
 4. [docs/review-followup.md](docs/review-followup.md)
-5. [docs/impact-ledger.md](docs/impact-ledger.md)
-6. [docs/adapters.md](docs/adapters.md)
+5. [docs/maintainer-lessons.md](docs/maintainer-lessons.md)
+6. [docs/workflow-upgrades.md](docs/workflow-upgrades.md)
+7. [docs/impact-ledger.md](docs/impact-ledger.md)
+8. [docs/adapters.md](docs/adapters.md)
 
 Then copy [templates/work-slice.md](templates/work-slice.md) for the first
 small support attempt.
 
 Optional agent workflows live in [skills/](skills/README.md).
+For a fake private workbench shape, see
+[examples/minimal-workbench](examples/minimal-workbench/README.md). For a
+merged-work lifecycle example, see
+[examples/lifecycle-case-study.md](examples/lifecycle-case-study.md).
+
+Before publishing copied workbench material, run the public-boundary checker:
+
+```bash
+python tools/public-boundary/check_public_boundary.py
+```
 
 ## License
 

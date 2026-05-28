@@ -31,6 +31,15 @@ Useful actions:
 - `fix-review`: review state says changes requested; fetch inline comments
 - `cleanup-merged` / `cleanup-closed`: update receipts and cleanup
 
+Include a separate active ledger when your workbench keeps open PRs outside the
+claims file:
+
+```powershell
+./tools/status/oss-status.ps1 `
+  -LeadClaimsPath work/lead-claims.md `
+  -ActiveLedgerPath work/active-issues.md
+```
+
 Write JSON:
 
 ```powershell

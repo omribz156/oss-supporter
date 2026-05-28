@@ -32,9 +32,9 @@ Do not commit raw logs or session files.
 
 Add newest first:
 
-| Period | Snapshot | Tokens | Projects Helped | PRs Merged |
+| Period | Snapshot | Tokens | Public repos referenced | Accepted / merged outcomes |
 | --- | --- | ---: | ---: | ---: |
-| 2026-05 | [snapshot](2026-05.md) | 1,030,308,708 | 70 | 29 |
+| 2026-05 | [snapshot](2026-05.md) | 1,473,567,820 | 121 | 39 |
 
 Template: [impact-snapshot.md](../templates/impact-snapshot.md).
 

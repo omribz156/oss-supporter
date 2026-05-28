@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Added agent-first entrypoint, minimal workbench example, lifecycle case study, CI checks, and v0.1.5 release notes.
+- Added Markdown output modes for helper tools.
+- Refreshed May 2026 public impact numbers and latest accepted-work examples.
+- Added a public-boundary checker for private-path/log/token leak checks.
+- Added distilled maintainer lessons from real review and CI feedback.
+- Added portable helper tools for lead scoring, repo capability checks, source-truth checks, PR body drafts, and cleanup diagnosis.
 - Added portable OSS workflow skills for scouting, PR flow, and review follow-up.
 - Added portable GitHub status scripts for compact PR/comment follow-up.
 

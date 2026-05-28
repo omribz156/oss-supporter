@@ -43,3 +43,14 @@ reimplement it.
 
 Do not automate public comments, PRs, or issue replies from this repo without a
 human/operator review gate.
+
+## Publish Check
+
+Before committing copied material from a private workbench, run:
+
+```bash
+python tools/public-boundary/check_public_boundary.py
+```
+
+Fix findings by removing or sanitizing private data. Do not add broad allowlists
+for real workbench paths or raw logs.

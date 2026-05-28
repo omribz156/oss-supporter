@@ -7,6 +7,9 @@ to start cleanly without guessing.
 
 ## One-Paste Agent Start
 
+Agents can also read [AGENT_START.md](AGENT_START.md) for the shorter
+machine-facing entrypoint.
+
 ```text
 You are helping me use OSS Supporter.
 
